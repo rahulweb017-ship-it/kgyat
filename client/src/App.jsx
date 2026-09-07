@@ -346,7 +346,7 @@ export default function App() {
       .elementor-element-8d093fa > .elementor-widget-container,
       .elementor-element-8d093fa h2,
       .elementor-element-8d093fa .elementor-heading-title {
-        margin-bottom: 22px !important;
+        margin-bottom: 16px !important;
       }
 
       /* Interactive Accordion & Toggle Widget Styling */
