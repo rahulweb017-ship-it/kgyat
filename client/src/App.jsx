@@ -289,7 +289,7 @@ export default function App() {
         height: auto !important;
       }
 
-            /* Eyebrows / Section Top-Labels (Brand Pink #CF3367) */
+                  /* Eyebrows / Section Top-Labels (Brand Pink #CF3367) */
       .kgyat-top-label,
       .elementor-element-4bd9455 h2,
       .elementor-element-4bd9455 .elementor-heading-title,
@@ -312,24 +312,11 @@ export default function App() {
       }
 
       /* Headings on DARK Background Sections (White #ffffff) */
-      .elementor-element-f901494 h1, .elementor-element-f901494 h2, .elementor-element-f901494 h3, .elementor-element-f901494 .elementor-heading-title,
-      .elementor-element-13903d5 h1, .elementor-element-13903d5 h2, .elementor-element-13903d5 h3, .elementor-element-13903d5 .elementor-heading-title,
       .elementor-element-1ab1f77 h1, .elementor-element-1ab1f77 h2, .elementor-element-1ab1f77 h3, .elementor-element-1ab1f77 .elementor-heading-title,
       .elementor-element-8f7ed1e h1, .elementor-element-8f7ed1e h2, .elementor-element-8f7ed1e h3, .elementor-element-8f7ed1e .elementor-heading-title,
       .elementor-element-ecd1c65 h1, .elementor-element-ecd1c65 h2, .elementor-element-ecd1c65 h3, .elementor-element-ecd1c65 .elementor-heading-title,
-      .elementor-element-2bf34ee h1, .elementor-element-2bf34ee h2, .elementor-element-2bf34ee h3, .elementor-element-2bf34ee .elementor-heading-title,
-      .elementor-element-de88c67 h1, .elementor-element-de88c67 h2, .elementor-element-de88c67 h3, .elementor-element-de88c67 .elementor-heading-title,
-      .elementor-element-8d093fa h1, .elementor-element-8d093fa h2, .elementor-element-8d093fa h3, .elementor-element-8d093fa .elementor-heading-title,
-      .elementor-element-6252c64 h1, .elementor-element-6252c64 h2, .elementor-element-6252c64 h3, .elementor-element-6252c64 .elementor-heading-title,
-      .elementor-element-390d001 h1, .elementor-element-390d001 h2, .elementor-element-390d001 h3, .elementor-element-390d001 .elementor-heading-title,
-      .elementor-element-383fc67 h1, .elementor-element-383fc67 h2, .elementor-element-383fc67 h3, .elementor-element-383fc67 .elementor-heading-title,
-      .elementor-element-e2e83fb h1, .elementor-element-e2e83fb h2, .elementor-element-e2e83fb h3, .elementor-element-e2e83fb .elementor-heading-title,
-      .elementor-element-57bc3e9 h1, .elementor-element-57bc3e9 h2, .elementor-element-57bc3e9 h3, .elementor-element-57bc3e9 .elementor-heading-title,
-      .elementor-element-52a09f3 h1, .elementor-element-52a09f3 h2, .elementor-element-52a09f3 h3, .elementor-element-52a09f3 .elementor-heading-title,
-      .elementor-element-37dd286 h1, .elementor-element-37dd286 h2, .elementor-element-37dd286 h3, .elementor-element-37dd286 .elementor-heading-title,
-      .elementor-element-256d4d3 h1, .elementor-element-256d4d3 h2, .elementor-element-256d4d3 h3, .elementor-element-256d4d3 .elementor-heading-title,
-      .elementor-element-ef4a738 h1, .elementor-element-ef4a738 h2, .elementor-element-ef4a738 h3, .elementor-element-ef4a738 .elementor-heading-title,
-      .elementor-element-9006bb0 h1, .elementor-element-9006bb0 h2, .elementor-element-9006bb0 h3, .elementor-element-9006bb0 .elementor-heading-title,
+      .elementor-element-f901494 h1, .elementor-element-f901494 h2, .elementor-element-f901494 h3, .elementor-element-f901494 .elementor-heading-title,
+      .elementor-element-13903d5 h1, .elementor-element-13903d5 h2, .elementor-element-13903d5 h3, .elementor-element-13903d5 .elementor-heading-title,
       .elementor-element-e2b3f5a h1, .elementor-element-e2b3f5a h2, .elementor-element-e2b3f5a h3, .elementor-element-e2b3f5a .elementor-heading-title,
       .elementor-element-c42bd73 h1, .elementor-element-c42bd73 h2, .elementor-element-c42bd73 h3, .elementor-element-c42bd73 .elementor-heading-title,
       .elementor-element-0b0c7b8 h1, .elementor-element-0b0c7b8 h2, .elementor-element-0b0c7b8 h3, .elementor-element-0b0c7b8 .elementor-heading-title,
@@ -339,7 +326,13 @@ export default function App() {
         color: #ffffff !important;
       }
 
-      /* Headings on LIGHT Background Cards/Containers (Dark #272727) */
+      /* Headings on LIGHT Background Sections (Dark #272727) */
+      .elementor-element-2bf34ee h1, .elementor-element-2bf34ee h2, .elementor-element-2bf34ee h3, .elementor-element-2bf34ee .elementor-heading-title,
+      .elementor-element-e190628 h1, .elementor-element-e190628 h2, .elementor-element-e190628 h3, .elementor-element-e190628 .elementor-heading-title,
+      .elementor-element-de88c67 h1, .elementor-element-de88c67 h2, .elementor-element-de88c67 h3, .elementor-element-de88c67 .elementor-heading-title,
+      .elementor-element-ba98338 h1, .elementor-element-ba98338 h2, .elementor-element-ba98338 h3, .elementor-element-ba98338 .elementor-heading-title,
+      .elementor-element-8d093fa h1, .elementor-element-8d093fa h2, .elementor-element-8d093fa h3, .elementor-element-8d093fa .elementor-heading-title,
+      .elementor-element-e15e368 h1, .elementor-element-e15e368 h2, .elementor-element-e15e368 h3, .elementor-element-e15e368 .elementor-heading-title,
       .elementor-element-182caec h1, .elementor-element-182caec h2, .elementor-element-182caec h3, .elementor-element-182caec .elementor-heading-title,
       .elementor-element-15f1f5b h1, .elementor-element-15f1f5b h2, .elementor-element-15f1f5b h3, .elementor-element-15f1f5b .elementor-heading-title,
       .elementor-element-42aaa71 h1, .elementor-element-42aaa71 h2, .elementor-element-42aaa71 h3, .elementor-element-42aaa71 .elementor-heading-title,
