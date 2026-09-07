@@ -143,6 +143,12 @@ export default function App() {
       .elementor-text-editor p:last-child {
         margin-bottom: 0px !important;
       }
+      .elementor-widget-text-editor p br,
+      .elementor-text-editor p br {
+        content: "" !important;
+        display: block !important;
+        margin-bottom: 15px !important;
+      }
 
       h1, .elementor-heading-title.elementor-size-default h1, h1.elementor-heading-title {
         font-size: 44px !important;
