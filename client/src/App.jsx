@@ -200,6 +200,142 @@ export default function App() {
       .elementor-element-e3c092b {
         min-height: 450px !important;
       }
+
+      /* Engine Subdirectory Hero Section Exact Screenshot Match */
+      .elementor-element-1ab1f77 {
+        background-color: #050608 !important;
+        background-image: url("/wp-mirror/wp-content/uploads/2026/02/ChatGPT-Image-Feb-18-2026-07_03_32-PM.png") !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        position: relative !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+      }
+      .elementor-element-1ab1f77::before {
+        content: "" !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        background: rgba(0, 0, 0, 0.78) !important;
+        z-index: 1 !important;
+      }
+      .elementor-element-1ab1f77 > .e-con-inner {
+        position: relative !important;
+        z-index: 2 !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+      }
+      .elementor-element-8f7ed1e h1,
+      .elementor-element-8f7ed1e h2,
+      .elementor-element-8f7ed1e .elementor-heading-title {
+        font-size: 42px !important;
+        font-weight: 700 !important;
+        color: #ffffff !important;
+        line-height: 1.2 !important;
+        margin-bottom: 12px !important;
+        letter-spacing: -0.5px !important;
+      }
+      .elementor-element-ecd1c65 h2,
+      .elementor-element-ecd1c65 h3,
+      .elementor-element-ecd1c65 .elementor-heading-title {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        color: #ffffff !important;
+        line-height: 1.3 !important;
+        margin-bottom: 22px !important;
+        letter-spacing: 0px !important;
+      }
+      .elementor-element-5b4c3ec,
+      .elementor-element-5b4c3ec p {
+        color: #ffffff !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 16px !important;
+        font-weight: 400 !important;
+      }
+      .elementor-element-58d282b .elementor-button {
+        background-color: #CF3367 !important;
+        background-image: none !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 4px !important;
+        padding: 12px 24px !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        transition: all 0.25s ease-in-out !important;
+        box-shadow: 0 4px 15px rgba(207, 51, 103, 0.35) !important;
+        margin-top: 10px !important;
+      }
+      .elementor-element-58d282b .elementor-button:hover {
+        background-color: #A82450 !important;
+        color: #ffffff !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(207, 51, 103, 0.5) !important;
+      }
+      .elementor-element-d038097 {
+        border-radius: 18px !important;
+        background: #252427 !important;
+        overflow: hidden !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+      }
+      .elementor-element-d038097 video {
+        border-radius: 18px !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      /* Header Standalone Contact Button & Ecosystem Dropdown Styles */
+      .kgyat-header-contact-btn {
+        background-color: #CF3367 !important;
+        color: #ffffff !important;
+        padding: 8px 20px !important;
+        border-radius: 4px !important;
+        font-weight: 600 !important;
+        margin-left: 12px !important;
+        transition: all 0.25s ease-in-out !important;
+        text-decoration: none !important;
+        display: inline-block !important;
+        line-height: 1.2 !important;
+      }
+      .kgyat-header-contact-btn:hover {
+        background-color: #A82450 !important;
+        color: #ffffff !important;
+        box-shadow: 0 4px 14px rgba(207, 51, 103, 0.35) !important;
+        transform: translateY(-1px) !important;
+      }
+      ul.hfe-nav-menu > li.kgyat-header-contact-item {
+        margin-left: 10px !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+      ul.hfe-nav-menu > li.kgyat-header-contact-item > a:before,
+      ul.hfe-nav-menu > li.kgyat-header-contact-item > a:after {
+        display: none !important;
+      }
+      .hfe-nav-menu .sub-menu {
+        border-radius: 6px !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+        padding: 8px 0 !important;
+        background-color: #ffffff !important;
+      }
+      .hfe-nav-menu .sub-menu a.hfe-sub-menu-item {
+        padding: 8px 16px !important;
+        color: #272727 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+      }
+      .hfe-nav-menu .sub-menu a.hfe-sub-menu-item:hover {
+        background-color: #f7f7f9 !important;
+        color: #CF3367 !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
