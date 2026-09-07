@@ -312,6 +312,12 @@ export default function App() {
       }
 
       /* Headings on DARK Background Sections (White #ffffff) */
+      .elementor-element-959cc44 h1, .elementor-element-959cc44 h2, .elementor-element-959cc44 h3, .elementor-element-959cc44 .elementor-heading-title,
+      .elementor-element-35171c7 h1, .elementor-element-35171c7 h2, .elementor-element-35171c7 h3, .elementor-element-35171c7 .elementor-heading-title,
+      .elementor-element-05dc578 h1, .elementor-element-05dc578 h2, .elementor-element-05dc578 h3, .elementor-element-05dc578 .elementor-heading-title,
+      .elementor-element-6a0f7e4 h1, .elementor-element-6a0f7e4 h2, .elementor-element-6a0f7e4 h3, .elementor-element-6a0f7e4 .elementor-heading-title,
+      .elementor-element-e8539c8 h1, .elementor-element-e8539c8 h2, .elementor-element-e8539c8 h3, .elementor-element-e8539c8 .elementor-heading-title,
+      .elementor-element-76918e2 h1, .elementor-element-76918e2 h2, .elementor-element-76918e2 h3, .elementor-element-76918e2 .elementor-heading-title,
       .elementor-element-1ab1f77 h1, .elementor-element-1ab1f77 h2, .elementor-element-1ab1f77 h3, .elementor-element-1ab1f77 .elementor-heading-title,
       .elementor-element-8f7ed1e h1, .elementor-element-8f7ed1e h2, .elementor-element-8f7ed1e h3, .elementor-element-8f7ed1e .elementor-heading-title,
       .elementor-element-ecd1c65 h1, .elementor-element-ecd1c65 h2, .elementor-element-ecd1c65 h3, .elementor-element-ecd1c65 .elementor-heading-title,
