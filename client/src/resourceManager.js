@@ -90,7 +90,43 @@ export function revealLazyContent(root = document) {
 }
 
 // Best-effort re-initialisation of interactive widgets after content is injected.
+
+export function bindAccordions(root = document) {
+  const titles = root.querySelectorAll('.elementor-tab-title, .elementor-accordion-title, .elementor-toggle-title');
+  titles.forEach((titleEl) => {
+    if (titleEl.dataset.kgyatAccordionBound) return;
+    titleEl.dataset.kgyatAccordionBound = '1';
+
+    titleEl.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const item = titleEl.closest('.elementor-toggle-item, .elementor-accordion-item');
+      if (!item) return;
+
+      const titleHeader = item.querySelector('.elementor-tab-title') || titleEl;
+      const content = item.querySelector('.elementor-tab-content');
+      if (!content) return;
+
+      const isExpanded = titleHeader.getAttribute('aria-expanded') === 'true' || content.classList.contains('elementor-active');
+
+      if (isExpanded) {
+        titleHeader.setAttribute('aria-expanded', 'false');
+        titleHeader.classList.remove('elementor-active');
+        content.classList.remove('elementor-active');
+        content.style.display = 'none';
+      } else {
+        titleHeader.setAttribute('aria-expanded', 'true');
+        titleHeader.classList.add('elementor-active');
+        content.classList.add('elementor-active');
+        content.style.display = 'block';
+      }
+    });
+  });
+}
+
 export function reinitWidgets() {
+  bindAccordions(document);
   revealLazyContent(document);
   const w = window;
   try { w.elementorFrontend && w.elementorFrontend.init && w.elementorFrontend.init(); } catch (e) {}

@@ -340,6 +340,70 @@ export default function App() {
         color: #272727 !important;
       }
 
+
+      /* Spacing below Detailed Comparetative Analysis Heading */
+      .elementor-element-8d093fa,
+      .elementor-element-8d093fa > .elementor-widget-container,
+      .elementor-element-8d093fa h2,
+      .elementor-element-8d093fa .elementor-heading-title {
+        margin-bottom: 22px !important;
+      }
+
+      /* Interactive Accordion & Toggle Widget Styling */
+      .elementor-toggle-item,
+      .elementor-accordion-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+        margin-bottom: 10px !important;
+        padding-bottom: 6px !important;
+      }
+      .elementor-tab-title {
+        cursor: pointer !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 8px 0 !important;
+        transition: color 0.2s ease !important;
+        user-select: none !important;
+      }
+      .elementor-tab-title .elementor-toggle-title,
+      .elementor-tab-title a.elementor-toggle-title {
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #CF3367 !important;
+        text-decoration: none !important;
+      }
+      .elementor-tab-title.elementor-active .elementor-toggle-title,
+      .elementor-tab-title:hover .elementor-toggle-title {
+        color: #A82450 !important;
+      }
+      .elementor-tab-title .elementor-toggle-icon {
+        color: #CF3367 !important;
+        font-size: 14px !important;
+      }
+      .elementor-tab-title.elementor-active .elementor-toggle-icon-closed {
+        display: none !important;
+      }
+      .elementor-tab-title.elementor-active .elementor-toggle-icon-opened {
+        display: inline-block !important;
+      }
+      .elementor-tab-title:not(.elementor-active) .elementor-toggle-icon-closed {
+        display: inline-block !important;
+      }
+      .elementor-tab-title:not(.elementor-active) .elementor-toggle-icon-opened {
+        display: none !important;
+      }
+      .elementor-tab-content {
+        padding: 8px 0 12px 24px !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        color: #444444 !important;
+      }
+      .elementor-tab-content p {
+        margin: 0 !important;
+        color: #444444 !important;
+        font-size: 15px !important;
+      }
+
       /* Header Standalone Contact Button & Ecosystem Dropdown Styles */
       .kgyat-header-contact-btn {
         background-color: #CF3367 !important;
