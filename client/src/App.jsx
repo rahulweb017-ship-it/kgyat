@@ -132,6 +132,18 @@ export default function App() {
         line-height: 1.3 !important;
       }
 
+      /* Paragraph Spacing Rule: 15px spacing below paragraph where new paragraph starts */
+      .elementor-widget-text-editor p,
+      .elementor-text-editor p,
+      .entry-content p,
+      #page p {
+        margin-bottom: 15px !important;
+      }
+      .elementor-widget-text-editor p:last-child,
+      .elementor-text-editor p:last-child {
+        margin-bottom: 0px !important;
+      }
+
       h1, .elementor-heading-title.elementor-size-default h1, h1.elementor-heading-title {
         font-size: 44px !important;
         color: #ffffff !important;
