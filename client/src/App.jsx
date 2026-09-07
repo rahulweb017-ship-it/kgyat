@@ -410,6 +410,18 @@ export default function App() {
         font-size: 15px !important;
       }
 
+      /* Combustion & Emissions Page Image Fixes */
+      .elementor-element-311c8d8 img,
+      .elementor-element-fd968c4 img,
+      .elementor-element-cabfe44 img,
+      .elementor-element-873ce83 img {
+        border-radius: 14px !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+      }
+
       /* Header Standalone Contact Button & Ecosystem Dropdown Styles */
       .kgyat-header-contact-btn {
         background-color: #CF3367 !important;
