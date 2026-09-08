@@ -170,10 +170,17 @@ export default function App() {
       body #page .elementor-element.elementor-element-aa6e0bc h1,
       body #page .elementor-element.elementor-element-aa6e0bc h2,
       body #page .elementor-element.elementor-element-aa6e0bc h3,
+      /* Subheading Specific Override: Normal font-weight (400), 20px font-size, white color */
       body #page .elementor-element.elementor-element-d97856e .elementor-heading-title,
       body #page .elementor-element.elementor-element-d97856e h1,
       body #page .elementor-element.elementor-element-d97856e h2,
-      body #page .elementor-element.elementor-element-d97856e h3,
+      body #page .elementor-element.elementor-element-d97856e h3 {
+        color: #ffffff !important;
+        font-size: 20px !important;
+        font-weight: 400 !important;
+        line-height: 1.4 !important;
+        margin-bottom: 20px !important;
+      }
       body #page .elementor-element.elementor-element-837f37e .elementor-heading-title,
       body #page .elementor-element.elementor-element-837f37e h1,
       body #page .elementor-element.elementor-element-837f37e h2,
