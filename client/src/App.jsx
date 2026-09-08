@@ -166,6 +166,14 @@ export default function App() {
       }
 
       /* High-Specificity Headings on DARK Background Sections (White #ffffff) */
+      body #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-959cc44 h1,
+      body #page .elementor-element.elementor-element-959cc44 h2,
+      body #page .elementor-element.elementor-element-959cc44 h3,
+      body #page .elementor-element.elementor-element-6a150cd .elementor-heading-title,
+      body #page .elementor-element.elementor-element-6a150cd h1,
+      body #page .elementor-element.elementor-element-6a150cd h2,
+      body #page .elementor-element.elementor-element-6a150cd h3,
       /* Main Heading (Rethinking Combustion...): Kept like before (32px, bold 700, white #ffffff) */
       body #page .elementor-element.elementor-element-aa6e0bc .elementor-heading-title,
       body #page .elementor-element.elementor-element-aa6e0bc h1,
