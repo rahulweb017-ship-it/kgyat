@@ -166,10 +166,16 @@ export default function App() {
       }
 
       /* High-Specificity Headings on DARK Background Sections (White #ffffff) */
+      /* Main Heading (Rethinking Combustion...): Kept like before (32px, bold 700, white #ffffff) */
       body #page .elementor-element.elementor-element-aa6e0bc .elementor-heading-title,
       body #page .elementor-element.elementor-element-aa6e0bc h1,
       body #page .elementor-element.elementor-element-aa6e0bc h2,
-      body #page .elementor-element.elementor-element-aa6e0bc h3,
+      body #page .elementor-element.elementor-element-aa6e0bc h3 {
+        color: #ffffff !important;
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        margin-bottom: 15px !important;
+      }
       /* Subheading Specific Override: Normal font-weight (400), 20px font-size, white color */
       body #page .elementor-element.elementor-element-d97856e .elementor-heading-title,
       body #page .elementor-element.elementor-element-d97856e h1,
