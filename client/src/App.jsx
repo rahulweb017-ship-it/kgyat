@@ -440,50 +440,6 @@ export default function App() {
         background-color: #f7f7f9 !important;
         color: #CF3367 !important;
       }
-
-      /* Projects Page Contrast Validation Check Fixes (.page-id-2078) */
-      .page-id-2078 .elementor-element-a402556,
-      .page-id-2078 .elementor-element-a402556 *,
-      .page-id-2078 .elementor-element-a402556 h1,
-      .page-id-2078 .elementor-element-a402556 h2,
-      .page-id-2078 .elementor-element-a402556 h3,
-      .page-id-2078 .elementor-element-a402556 h4,
-      .page-id-2078 .elementor-element-a402556 p,
-      .page-id-2078 .elementor-element-a402556 span,
-      .page-id-2078 .elementor-element-a402556 a,
-      .page-id-2078 .elementor-element-a402556 li,
-      .page-id-2078 .elementor-element-a402556 .elementor-heading-title {
-        color: #ffffff !important;
-      }
-
-      .page-id-2078 .elementor-element-14b0045,
-      .page-id-2078 .elementor-element-14b0045 *,
-      .page-id-2078 .elementor-element-14b0045 h1,
-      .page-id-2078 .elementor-element-14b0045 h2,
-      .page-id-2078 .elementor-element-14b0045 h3,
-      .page-id-2078 .elementor-element-14b0045 h4,
-      .page-id-2078 .elementor-element-14b0045 p,
-      .page-id-2078 .elementor-element-14b0045 span,
-      .page-id-2078 .elementor-element-14b0045 a,
-      .page-id-2078 .elementor-element-14b0045 li,
-      .page-id-2078 .elementor-element-14b0045 .elementor-heading-title {
-        color: #ffffff !important;
-      }
-
-      .page-id-2078 .n2-ss-layer-with-background,
-      .page-id-2078 .n2-ss-layer-with-background *,
-      .page-id-2078 .n2-ss-layer-content,
-      .page-id-2078 .n2-ss-layer-content * {
-        color: #ffffff !important;
-      }
-
-      /* Global Social Icon Contrast Fix */
-      .elementor-social-icon,
-      .elementor-social-icon i,
-      .elementor-social-icon span,
-      .elementor-social-icon .elementor-screen-only {
-        color: #ffffff !important;
-      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
