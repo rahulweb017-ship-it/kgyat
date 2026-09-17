@@ -441,6 +441,16 @@ export default function App() {
         color: #CF3367 !important;
       }
 
+      /* Homepage - Align WHAT WE DO / From Core Physics to Future Machines to Left */
+      .elementor-element-eb18b0e,
+      .elementor-element-eb18b0e .elementor-widget-container,
+      .elementor-element-eb18b0e .kgyat-title-wrapper,
+      .elementor-element-eb18b0e .kgyat-top-label,
+      .elementor-element-eb18b0e .kgyat-heading-h2,
+      .elementor-element-eb18b0e .elementor-heading-title {
+        text-align: left !important;
+      }
+
       /* Homepage Hero Section - Enabling Transformative Kinetics Color & Uppercase */
       .elementor-element-4f3358f,
       .elementor-element-4f3358f p,
