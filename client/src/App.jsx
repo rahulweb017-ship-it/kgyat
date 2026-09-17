@@ -451,6 +451,15 @@ export default function App() {
         text-align: left !important;
       }
 
+      /* Header Navbar Item - Engineering Arm of GYATK Color #CF3367 */
+      .elementor-element-4f3358f,
+      .elementor-element-4f3358f p,
+      .elementor-element-4f3358f .elementor-heading-title,
+      .elementor-element-4f3358f .elementor-widget-container {
+        color: #CF3367 !important;
+        text-transform: none !important;
+      }
+
       /* Homepage Hero Section Label - ENABLING TRANSFORMATIVE KINETICS Color #CF3367 & Uppercase */
       .elementor-element-8ae3dc3 .kgyat-top-label {
         color: #CF3367 !important;
