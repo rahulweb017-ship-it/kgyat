@@ -451,13 +451,13 @@ export default function App() {
         text-align: left !important;
       }
 
-      /* Homepage Hero Section - Enabling Transformative Kinetics Color & Uppercase */
+      /* Header Line - Engineering Arm of GYATK Color & Capitalize */
       .elementor-element-4f3358f,
       .elementor-element-4f3358f p,
       .elementor-element-4f3358f .elementor-heading-title,
       .elementor-element-4f3358f .elementor-widget-container {
         color: #CF3367 !important;
-        text-transform: uppercase !important;
+        text-transform: none !important;
       }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
