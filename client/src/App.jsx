@@ -440,6 +440,15 @@ export default function App() {
         background-color: #f7f7f9 !important;
         color: #CF3367 !important;
       }
+
+      /* Homepage Hero Section - Enabling Transformative Kinetics Color & Uppercase */
+      .elementor-element-4f3358f,
+      .elementor-element-4f3358f p,
+      .elementor-element-4f3358f .elementor-heading-title,
+      .elementor-element-4f3358f .elementor-widget-container {
+        color: #CF3367 !important;
+        text-transform: uppercase !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
