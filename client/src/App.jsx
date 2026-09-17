@@ -451,13 +451,10 @@ export default function App() {
         text-align: left !important;
       }
 
-      /* Header Line - Engineering Arm of GYATK Color & Capitalize */
-      .elementor-element-4f3358f,
-      .elementor-element-4f3358f p,
-      .elementor-element-4f3358f .elementor-heading-title,
-      .elementor-element-4f3358f .elementor-widget-container {
+      /* Homepage Hero Section Label - ENABLING TRANSFORMATIVE KINETICS Color #CF3367 & Uppercase */
+      .elementor-element-8ae3dc3 .kgyat-top-label {
         color: #CF3367 !important;
-        text-transform: none !important;
+        text-transform: uppercase !important;
       }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
