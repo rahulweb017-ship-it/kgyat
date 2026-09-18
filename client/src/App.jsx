@@ -465,6 +465,12 @@ export default function App() {
         color: #CF3367 !important;
         text-transform: uppercase !important;
       }
+
+      /* Homepage OUR PURPOSE & SERVICES Eyebrow Labels Color #CF3367 */
+      .elementor-element-d6e07c4 .kgyat-top-label,
+      .elementor-element-cc7d513 .kgyat-top-label {
+        color: #CF3367 !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
