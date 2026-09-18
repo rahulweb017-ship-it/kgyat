@@ -471,6 +471,12 @@ export default function App() {
       .elementor-element-cc7d513 .kgyat-top-label {
         color: #CF3367 !important;
       }
+
+      /* About Page - About KGYAT Eyebrow Label Color #CF3367 */
+      .elementor-element-4bd9455 .kgyat-top-label,
+      .page-id-2434 .elementor-element-4bd9455 .kgyat-top-label {
+        color: #CF3367 !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
