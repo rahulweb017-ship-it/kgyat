@@ -539,16 +539,33 @@ export default function App() {
     setContactHost(host ? host : null);
 
     let cancelled = false;
+    let projectSliderTimer = null;
+
     runScripts(page.scripts || []).then(() => {
       if (cancelled) return;
       reinitWidgets();
       bindForms(container, page.title);
       // Elementor sometimes needs a second nudge once images/lazy elements settle.
       setTimeout(() => { if (!cancelled) { reinitWidgets(); revealLazyContent(container); } }, 300);
+
+      // Project Slider Autoplay Loop for /projects page
+      if (location.pathname === '/projects') {
+        projectSliderTimer = setInterval(() => {
+          if (cancelled) return;
+          const ss = window._N2 ? window._N2['#n2-ss-2'] : null;
+          if (ss && typeof ss.next === 'function') {
+            ss.next();
+          }
+        }, 3500);
+      }
     });
 
     window.scrollTo(0, 0);
-    return () => { cancelled = true; setContactHost(null); };
+    return () => {
+      cancelled = true;
+      if (projectSliderTimer) clearInterval(projectSliderTimer);
+      setContactHost(null);
+    };
   }, [location.pathname]);
 
   // The #page wrapper mirrors the original WordPress markup so theme CSS targeting
