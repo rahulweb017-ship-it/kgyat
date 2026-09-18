@@ -514,6 +514,17 @@ export default function App() {
         color: #ffffff !important;
         font-size: 20px !important;
       }
+
+      /* Projects Page - KGYAT welcomes Heading Color White #ffffff */
+      body #page .elementor-element.elementor-element-ddd06f0 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-ddd06f0 h1,
+      body #page .elementor-element.elementor-element-ddd06f0 h2,
+      body #page .elementor-element.elementor-element-ddd06f0 h3,
+      .elementor-element-ddd06f0,
+      .elementor-element-ddd06f0 h2,
+      .elementor-element-ddd06f0 .elementor-heading-title {
+        color: #ffffff !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
