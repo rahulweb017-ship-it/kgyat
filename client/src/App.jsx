@@ -477,6 +477,19 @@ export default function App() {
       .page-id-2434 .elementor-element-4bd9455 .kgyat-top-label {
         color: #CF3367 !important;
       }
+
+      /* About Page - Our Objective Heading Color #272727 */
+      body #page .elementor-element.elementor-element-c1336f7 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-c1336f7 h1,
+      body #page .elementor-element.elementor-element-c1336f7 h2,
+      body #page .elementor-element.elementor-element-c1336f7 h3,
+      body #page .elementor-element.elementor-element-c1336f7 .kgyat-heading-h2,
+      .elementor-element-c1336f7,
+      .elementor-element-c1336f7 h2,
+      .elementor-element-c1336f7 .kgyat-heading-h2,
+      .elementor-element-c1336f7 .elementor-heading-title {
+        color: #272727 !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
