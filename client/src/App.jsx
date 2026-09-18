@@ -490,6 +490,30 @@ export default function App() {
       .elementor-element-c1336f7 .elementor-heading-title {
         color: #272727 !important;
       }
+
+      /* Projects Page Hero Headings Styling (Task 1 & Task 2) */
+      body #page .elementor-element.elementor-element-6df2e81 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-6df2e81 h2,
+      .elementor-element-6df2e81 .elementor-heading-title,
+      .elementor-element-6df2e81 h2 {
+        color: #ffffff !important;
+      }
+
+      body #page .elementor-element.elementor-element-6c6d2f2 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-6c6d2f2 h2,
+      .elementor-element-6c6d2f2 .elementor-heading-title,
+      .elementor-element-6c6d2f2 h2 {
+        color: #ffffff !important;
+        font-size: 20px !important;
+      }
+
+      body #page .elementor-element.elementor-element-be1c943 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-be1c943 h2,
+      .elementor-element-be1c943 .elementor-heading-title,
+      .elementor-element-be1c943 h2 {
+        color: #ffffff !important;
+        font-size: 20px !important;
+      }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
     ensureHeadStyles([...(page.headStyles || []), kgyatGlobalCustomStyles]);
