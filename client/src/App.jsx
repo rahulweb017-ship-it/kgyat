@@ -51,6 +51,7 @@ function bindForms(container, pageTitle) {
   const forms = container.querySelectorAll('form.wpcf7-form, form.wpforms-form, form');
   forms.forEach((form) => {
     if (form.dataset.kgyatBound) return;
+    if (form.closest('.kgyat-cf-card') || form.closest('.kgyat-cf-wrapper')) return;
     // skip search forms
     if (form.getAttribute('role') === 'search' || form.querySelector('input[type="search"]')) return;
     // only bind forms that look like contact/lead forms
@@ -537,6 +538,37 @@ export default function App() {
       .elementor-element-ddd06f0 h2,
       .elementor-element-ddd06f0 .elementor-heading-title {
         color: #ffffff !important;
+      }
+
+      
+      /* Contact Us Page Overhauls */
+      .kgyat-contact-hero {
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+      }
+      .kgyat-contact-hero-h1 {
+        color: #ffffff !important;
+      }
+      .kgyat-contact-main {
+        background: #f8fafc !important;
+      }
+      .kgyat-contact-card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+      }
+      .kgyat-contact-card:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 10px 25px rgba(0, 52, 107, 0.08) !important;
+        border-color: #CF3367 !important;
+      }
+      .kgyat-contact-map-section {
+        background: #f8fafc !important;
+      }
+      body #page .kgyat-contact-left-col h2,
+      body #page .kgyat-contact-map-section h2 {
+        color: #1e293b !important;
+        font-size: 32px !important;
+        font-weight: 700 !important;
       }
 
       /* Projects Page - Redesigned Project Streams at a Glance */
