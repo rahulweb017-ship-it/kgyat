@@ -515,6 +515,19 @@ export default function App() {
         font-size: 20px !important;
       }
 
+      /* Homepage Hero Right-Side Animation Logo Size Adjustment (Task 1) */
+      .elementor-element-9aa29dc .elementor-element-9e132a0,
+      .elementor-element-9e132a0 {
+        max-width: 82% !important;
+        margin: 0 auto !important;
+      }
+      .elementor-element-9e132a0 video {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+      }
+
       /* Projects Page - KGYAT welcomes Heading Color White #ffffff */
       body #page .elementor-element.elementor-element-ddd06f0 .elementor-heading-title,
       body #page .elementor-element.elementor-element-ddd06f0 h1,
@@ -524,6 +537,28 @@ export default function App() {
       .elementor-element-ddd06f0 h2,
       .elementor-element-ddd06f0 .elementor-heading-title {
         color: #ffffff !important;
+      }
+
+      /* Projects Page - Redesigned Project Streams at a Glance */
+      .elementor-element-b8c981b,
+      .kgyat-streams-section {
+        background-color: #f8fafc !important;
+        padding: 60px 0 !important;
+      }
+      .kgyat-stream-card {
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 14px !important;
+        padding: 32px 26px !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.04) !important;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .kgyat-stream-card:hover {
+        transform: translateY(-5px) !important;
+        box-shadow: 0 14px 32px rgba(0, 52, 107, 0.1) !important;
+        border-color: #CF3367 !important;
       }
     `;
     ensureCss([...(manifest.globalCss || []), ...(page.css || [])]);
