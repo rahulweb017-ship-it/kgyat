@@ -473,20 +473,36 @@ export default function App() {
         color: #CF3367 !important;
       }
 
-      /* About Page - About KGYAT Eyebrow Label Color #CF3367 */
+      /* About Page - All Top Labels (Eyebrow Labels) Color #CF3367 */
+      body.page-id-2434 .kgyat-top-label,
+      .page-id-2434 .kgyat-top-label,
+      .elementor-page-2434 .kgyat-top-label,
+      #page .kgyat-top-label,
       .elementor-element-4bd9455 .kgyat-top-label,
-      .page-id-2434 .elementor-element-4bd9455 .kgyat-top-label {
+      .elementor-element-a6c92bb .kgyat-top-label,
+      .elementor-element-1a9a8ba .kgyat-top-label,
+      .elementor-element-dd4b11c .kgyat-top-label,
+      .elementor-element-1a6336f .kgyat-top-label,
+      .elementor-element-9a87f2d .kgyat-top-label,
+      .elementor-element-62acdb3 .kgyat-top-label,
+      .elementor-element-c1336f7 .kgyat-top-label,
+      .elementor-element-c23d8e5 .kgyat-top-label,
+      .elementor-element-e0a29fe .kgyat-top-label,
+      .elementor-element-62ccfed .kgyat-top-label,
+      .elementor-element-4aade68 .kgyat-top-label,
+      .elementor-element-9294888 .kgyat-top-label {
         color: #CF3367 !important;
       }
 
-      /* About Page - Our Objective Heading Color #272727 */
+      /* About Page - Our Objective Heading Color #272727 (scoped strictly to headings) */
       body #page .elementor-element.elementor-element-c1336f7 .elementor-heading-title,
       body #page .elementor-element.elementor-element-c1336f7 h1,
       body #page .elementor-element.elementor-element-c1336f7 h2,
       body #page .elementor-element.elementor-element-c1336f7 h3,
       body #page .elementor-element.elementor-element-c1336f7 .kgyat-heading-h2,
-      .elementor-element-c1336f7,
+      .elementor-element-c1336f7 h1,
       .elementor-element-c1336f7 h2,
+      .elementor-element-c1336f7 h3,
       .elementor-element-c1336f7 .kgyat-heading-h2,
       .elementor-element-c1336f7 .elementor-heading-title {
         color: #272727 !important;
