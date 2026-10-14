@@ -494,6 +494,111 @@ export default function App() {
         color: #CF3367 !important;
       }
 
+      
+      /* About Page Hero Section - Custom Interactive Tooltips for GYATK & RVCR */
+      .kgyat-tooltip-wrap {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .kgyat-tooltip-wrap .kgyat-tooltip-trigger {
+        color: #CF3367 !important;
+        font-weight: 600 !important;
+        text-decoration: underline dotted #CF3367 1.5px !important;
+        text-underline-offset: 4px !important;
+        transition: color 0.2s ease, text-decoration-color 0.2s ease !important;
+        position: relative;
+        display: inline;
+      }
+
+      .kgyat-tooltip-wrap:hover .kgyat-tooltip-trigger,
+      .kgyat-tooltip-wrap:focus-within .kgyat-tooltip-trigger {
+        color: #ff548e !important;
+        text-decoration-color: #ff548e !important;
+      }
+
+      .kgyat-tooltip-wrap .kgyat-tooltip-box {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: calc(100% + 12px);
+        left: 50%;
+        transform: translateX(-50%) translateY(4px);
+        background: #0d1b2a;
+        background: linear-gradient(135deg, #111e33 0%, #0b1524 100%);
+        color: #ffffff !important;
+        border: 1px solid rgba(207, 51, 103, 0.45);
+        box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.6), 0 0 16px rgba(207, 51, 103, 0.25);
+        border-radius: 8px;
+        padding: 9px 14px;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        line-height: 1.45 !important;
+        width: max-content;
+        max-width: 270px;
+        text-align: center;
+        z-index: 9999;
+        pointer-events: none;
+        transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+      }
+
+      /* Tooltip Downward Arrow Border */
+      .kgyat-tooltip-wrap .kgyat-tooltip-box::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -7px;
+        border-width: 7px;
+        border-style: solid;
+        border-color: rgba(207, 51, 103, 0.45) transparent transparent transparent;
+      }
+
+      /* Tooltip Downward Arrow Background */
+      .kgyat-tooltip-wrap .kgyat-tooltip-box::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -6px;
+        border-width: 6px;
+        border-style: solid;
+        border-color: #0b1524 transparent transparent transparent;
+      }
+
+      /* Hover & Focus state */
+      .kgyat-tooltip-wrap:hover .kgyat-tooltip-box,
+      .kgyat-tooltip-wrap:focus-within .kgyat-tooltip-box,
+      .kgyat-tooltip-wrap.active .kgyat-tooltip-box {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      /* Responsive Tooltip Alignment on Mobile Screens */
+      @media (max-width: 600px) {
+        .kgyat-tooltip-wrap .kgyat-tooltip-box {
+          max-width: 250px;
+          left: -10px;
+          transform: translateY(4px);
+        }
+        .kgyat-tooltip-wrap:hover .kgyat-tooltip-box,
+        .kgyat-tooltip-wrap:focus-within .kgyat-tooltip-box,
+        .kgyat-tooltip-wrap.active .kgyat-tooltip-box {
+          transform: translateY(0);
+        }
+        .kgyat-tooltip-wrap .kgyat-tooltip-box::before {
+          left: 32px;
+          margin-left: -7px;
+        }
+        .kgyat-tooltip-wrap .kgyat-tooltip-box::after {
+          left: 32px;
+          margin-left: -6px;
+        }
+      }
+
+
       /* About Page - Our Objective Heading Color #272727 (scoped strictly to headings) */
       body #page .elementor-element.elementor-element-c1336f7 .elementor-heading-title,
       body #page .elementor-element.elementor-element-c1336f7 h1,
@@ -628,6 +733,21 @@ export default function App() {
       if (cancelled) return;
       reinitWidgets();
       bindForms(container, page.title);
+
+      // Mobile / Tap Tooltip Handler
+      const handleTooltipToggle = (e) => {
+        const wrap = e.target.closest('.kgyat-tooltip-wrap');
+        document.querySelectorAll('.kgyat-tooltip-wrap.active').forEach((el) => {
+          if (el !== wrap) el.classList.remove('active');
+        });
+        if (wrap && window.matchMedia('(max-width: 768px)').matches) {
+          if (!wrap.classList.contains('active')) {
+            e.preventDefault();
+            wrap.classList.add('active');
+          }
+        }
+      };
+      container.addEventListener('click', handleTooltipToggle);
       // Elementor sometimes needs a second nudge once images/lazy elements settle.
       setTimeout(() => { if (!cancelled) { reinitWidgets(); revealLazyContent(container); } }, 300);
 
