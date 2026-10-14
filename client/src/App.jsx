@@ -267,11 +267,7 @@ export default function App() {
       body #page .elementor-element.elementor-element-e38546e .elementor-heading-title,
       body #page .elementor-element.elementor-element-e38546e h1,
       body #page .elementor-element.elementor-element-e38546e h2,
-      body #page .elementor-element.elementor-element-e38546e h3,
-      body #page .elementor-element.elementor-element-e3c092b .elementor-heading-title,
-      body #page .elementor-element.elementor-element-e3c092b h1,
-      body #page .elementor-element.elementor-element-e3c092b h2,
-      body #page .elementor-element.elementor-element-e3c092b h3 {
+      body #page .elementor-element.elementor-element-e38546e h3 {
         color: #ffffff !important;
       }
 
@@ -599,18 +595,115 @@ export default function App() {
       }
 
 
-      /* About Page - Our Objective Heading Color #272727 (scoped strictly to headings) */
+      /* About Page - Our Objective Section Exact Height & Vertical Middle Alignment */
+      .elementor-element.elementor-element-e3c092b {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        height: 384px !important;
+        min-height: 384px !important;
+        max-height: 384px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        background: #ffffff !important;
+        box-sizing: border-box !important;
+      }
+
+      .elementor-element.elementor-element-2beb781 {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+        height: 384px !important;
+        min-height: 0 !important;
+        max-height: 384px !important;
+        --min-height: 0px !important;
+        background-image: url("/wp-mirror/wp-content/uploads/2025/05/IMG_0140-1.webp") !important;
+        background-size: cover !important;
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .elementor-element.elementor-element-e1ec765 {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+        height: 384px !important;
+        min-height: 0 !important;
+        max-height: 384px !important;
+        --min-height: 0px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        padding: 20px 70px 20px 50px !important;
+        box-sizing: border-box !important;
+        background: #ffffff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      .elementor-element.elementor-element-e1ec765 .kgyat-title-wrapper {
+        margin-bottom: 12px !important;
+      }
+
+      .elementor-element.elementor-element-e1ec765 .kgyat-top-label {
+        color: #CF3367 !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        margin-bottom: 6px !important;
+        line-height: 1.2 !important;
+      }
+
+      body #page .elementor-element.elementor-element-e1ec765 .elementor-heading-title,
       body #page .elementor-element.elementor-element-c1336f7 .elementor-heading-title,
-      body #page .elementor-element.elementor-element-c1336f7 h1,
-      body #page .elementor-element.elementor-element-c1336f7 h2,
-      body #page .elementor-element.elementor-element-c1336f7 h3,
-      body #page .elementor-element.elementor-element-c1336f7 .kgyat-heading-h2,
-      .elementor-element-c1336f7 h1,
-      .elementor-element-c1336f7 h2,
-      .elementor-element-c1336f7 h3,
-      .elementor-element-c1336f7 .kgyat-heading-h2,
-      .elementor-element-c1336f7 .elementor-heading-title {
+      .elementor-element.elementor-element-e1ec765 .elementor-heading-title,
+      .elementor-element.elementor-element-c1336f7 .elementor-heading-title {
+        font-size: 30px !important;
+        font-weight: 700 !important;
         color: #272727 !important;
+        line-height: 1.25 !important;
+        margin: 0 !important;
+      }
+
+      .elementor-element.elementor-element-e1ec765 p {
+        font-size: 14.5px !important;
+        line-height: 1.55 !important;
+        color: #444444 !important;
+        margin-bottom: 12px !important;
+      }
+
+      body #page .elementor-element.elementor-element-e1ec765 p:last-child,
+      body #page .elementor-element.elementor-element-e1ec765 p:last-of-type,
+      #page .elementor-element.elementor-element-e1ec765 p:last-child,
+      #page .elementor-element.elementor-element-e1ec765 p:last-of-type {
+        margin-bottom: 0 !important;
+      }
+
+      @media (max-width: 900px) {
+        .elementor-element.elementor-element-e3c092b {
+          flex-direction: column !important;
+          height: auto !important;
+          max-height: none !important;
+          min-height: auto !important;
+        }
+        .elementor-element.elementor-element-2beb781 {
+          width: 100% !important;
+          flex: 1 1 100% !important;
+          height: 280px !important;
+          max-height: 280px !important;
+        }
+        .elementor-element.elementor-element-e1ec765 {
+          width: 100% !important;
+          flex: 1 1 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          padding: 35px 25px !important;
+          justify-content: flex-start !important;
+        }
       }
 
       /* Projects Page Hero Headings Styling (Task 1 & Task 2) */
