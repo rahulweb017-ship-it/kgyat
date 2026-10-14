@@ -457,6 +457,28 @@ export default function App() {
         text-transform: none !important;
       }
 
+      /* Keep engine subdirectory navbar brand text on a single line */
+      body.page-id-3773 .elementor-heading-title,
+      .engine-subdirectory-header .elementor-heading-title,
+      #engine-menu .elementor-heading-title,
+      .elementor-element-c689975 .elementor-heading-title,
+      #engine-menu .elementor-element-4f3358f,
+      #engine-menu .elementor-element-4f3358f p,
+      #engine-menu .elementor-element-4f3358f .elementor-widget-container,
+      .elementor-element-4f3358f,
+      .elementor-element-4f3358f p,
+      .elementor-element-4f3358f .elementor-widget-container,
+      .elementor-element-4f3358f .elementor-heading-title {
+        white-space: nowrap !important;
+        word-break: keep-all !important;
+        max-width: none !important;
+      }
+
+      #engine-menu .elementor-element-5319762 {
+        flex-wrap: nowrap !important;
+        max-width: none !important;
+      }
+
       /* Homepage Hero Section Label - ENABLING TRANSFORMATIVE KINETICS Color #CF3367 & Uppercase */
       .elementor-element-8ae3dc3 .kgyat-top-label {
         color: #CF3367 !important;
