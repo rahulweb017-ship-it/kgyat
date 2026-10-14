@@ -600,6 +600,10 @@ export default function App() {
         display: flex !important;
         flex-direction: row !important;
         align-items: stretch !important;
+        gap: 0 !important;
+        --gap: 0px 0px !important;
+        --row-gap: 0px !important;
+        --column-gap: 0px !important;
         height: 384px !important;
         min-height: 384px !important;
         max-height: 384px !important;
@@ -607,7 +611,8 @@ export default function App() {
         padding: 0 !important;
         margin-top: 50px !important;
         margin-bottom: 50px !important;
-        background: #ffffff !important;
+        background-color: #F7F7F7 !important;
+        background: #F7F7F7 !important;
         box-sizing: border-box !important;
       }
 
@@ -639,9 +644,10 @@ export default function App() {
         flex-direction: column !important;
         justify-content: center !important;
         align-items: flex-start !important;
-        padding: 20px 70px 20px 50px !important;
+        padding: 25px 45px !important;
         box-sizing: border-box !important;
-        background: #ffffff !important;
+        background-color: #F7F7F7 !important;
+        background: #F7F7F7 !important;
         opacity: 1 !important;
         visibility: visible !important;
       }

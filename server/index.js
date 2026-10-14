@@ -27,10 +27,16 @@ app.get('/api/health', (_req, res) => res.json({ ok: true }));
 // Built React app (after `npm run build`).
 const DIST = path.join(ROOT, 'client', 'dist');
 if (fs.existsSync(DIST)) {
-  app.use(express.static(DIST));
+  app.use((req, res, next) => {
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+    next();
+  });
+  app.use(express.static(DIST, { maxAge: 0, etag: false }));
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api') || req.path.startsWith('/wp-mirror')) return next();
-    res.sendFile(path.join(DIST, 'index.html'));
+    res.sendFile(path.join(DIST, 'index.html'), { etag: false });
   });
 } else {
   app.get('/', (_req, res) => {
