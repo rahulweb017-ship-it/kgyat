@@ -248,10 +248,6 @@ export default function App() {
       body #page .elementor-element.elementor-element-ecd1c65 h1,
       body #page .elementor-element.elementor-element-ecd1c65 h2,
       body #page .elementor-element.elementor-element-ecd1c65 h3,
-      body #page .elementor-element.elementor-element-e2b3f5a .elementor-heading-title,
-      body #page .elementor-element.elementor-element-e2b3f5a h1,
-      body #page .elementor-element.elementor-element-e2b3f5a h2,
-      body #page .elementor-element.elementor-element-e2b3f5a h3,
       body #page .elementor-element.elementor-element-c42bd73 .elementor-heading-title,
       body #page .elementor-element.elementor-element-c42bd73 h1,
       body #page .elementor-element.elementor-element-c42bd73 h2,
@@ -311,7 +307,15 @@ export default function App() {
       body #page .elementor-element.elementor-element-12e1f18 .elementor-heading-title,
       body #page .elementor-element.elementor-element-12e1f18 h1,
       body #page .elementor-element.elementor-element-12e1f18 h2,
-      body #page .elementor-element.elementor-element-12e1f18 h3 {
+      body #page .elementor-element.elementor-element-12e1f18 h3,
+      body #page .elementor-element.elementor-element-e2b3f5a .elementor-heading-title,
+      body #page .elementor-element.elementor-element-e2b3f5a h1,
+      body #page .elementor-element.elementor-element-e2b3f5a h2,
+      body #page .elementor-element.elementor-element-e2b3f5a h3,
+      .elementor-element-e2b3f5a .elementor-heading-title,
+      .elementor-element-e2b3f5a h1,
+      .elementor-element-e2b3f5a h2,
+      .elementor-element-e2b3f5a h3 {
         color: #272727 !important;
       }
 
