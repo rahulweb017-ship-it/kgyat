@@ -167,20 +167,37 @@ export default function App() {
       }
 
       /* High-Specificity Headings on DARK Background Sections (White #ffffff) */
-      /* IP & Recognition Hero Section Center Alignment */
-      body #page .elementor-element.elementor-element-6a150cd .elementor-heading-title,
-      body #page .elementor-element.elementor-element-6a150cd .elementor-widget-container,
-      body #page .elementor-element.elementor-element-6a150cd .elementor-widget-text-editor,
-      body #page .elementor-element.elementor-element-6a150cd p,
-      body #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
-      body #page .elementor-element.elementor-element-959cc44 h1,
-      body #page .elementor-element.elementor-element-959cc44 h2,
-      body #page .elementor-element.elementor-element-959cc44 h3 {
+      /* IP & Recognition Hero Section Center Alignment (Scoped to page-id-5512) */
+      body.page-id-5512 #page .elementor-element.elementor-element-6a150cd .elementor-heading-title,
+      body.page-id-5512 #page .elementor-element.elementor-element-6a150cd .elementor-widget-container,
+      body.page-id-5512 #page .elementor-element.elementor-element-6a150cd .elementor-widget-text-editor,
+      body.page-id-5512 #page .elementor-element.elementor-element-6a150cd p,
+      body.page-id-5512 #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
+      body.page-id-5512 #page .elementor-element.elementor-element-959cc44 h1,
+      body.page-id-5512 #page .elementor-element.elementor-element-959cc44 h2,
+      body.page-id-5512 #page .elementor-element.elementor-element-959cc44 h3 {
         text-align: center !important;
       }
-      body #page .elementor-element.elementor-element-35171c7 {
+      body.page-id-5512 #page .elementor-element.elementor-element-35171c7 {
         align-items: center !important;
         margin: 0 auto !important;
+      }
+
+      /* Technology Page Hero Section: Left Align Text inside Container */
+      body.page-id-5373 #page .elementor-element.elementor-element-6a150cd .elementor-heading-title,
+      body.page-id-5373 #page .elementor-element.elementor-element-6a150cd .elementor-widget-container,
+      body.page-id-5373 #page .elementor-element.elementor-element-6a150cd .elementor-widget-text-editor,
+      body.page-id-5373 #page .elementor-element.elementor-element-6a150cd p,
+      body.page-id-5373 #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
+      body.page-id-5373 #page .elementor-element.elementor-element-959cc44 h1,
+      body.page-id-5373 #page .elementor-element.elementor-element-959cc44 h2,
+      body.page-id-5373 #page .elementor-element.elementor-element-959cc44 h3 {
+        text-align: left !important;
+      }
+      body.page-id-5373 #page .elementor-element.elementor-element-35171c7 {
+        align-items: flex-start !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
       }
 
       body #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
