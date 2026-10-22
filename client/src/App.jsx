@@ -703,6 +703,47 @@ export default function App() {
         max-width: none !important;
       }
 
+      /* Engine Subdirectory Hero Typography */
+      body.page-id-3773 #page .elementor-element.elementor-element-engine-top-label .kgyat-top-label,
+      .elementor-element-engine-top-label .kgyat-top-label {
+        color: #CF3367 !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        margin-bottom: 14px !important;
+        line-height: 1.2 !important;
+        display: block !important;
+      }
+      body.page-id-3773 #page .elementor-element.elementor-element-8f7ed1e .elementor-heading-title,
+      body.page-id-3773 #page .elementor-element.elementor-element-8f7ed1e h1,
+      body.page-id-3773 #page .elementor-element.elementor-element-8f7ed1e h2 {
+        font-size: 42px !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+        color: #ffffff !important;
+        margin-bottom: 12px !important;
+        letter-spacing: -0.5px !important;
+      }
+      body.page-id-3773 #page .elementor-element.elementor-element-ecd1c65 .elementor-heading-title,
+      body.page-id-3773 #page .elementor-element.elementor-element-ecd1c65 h2,
+      body.page-id-3773 #page .elementor-element.elementor-element-ecd1c65 h3 {
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        line-height: 1.35 !important;
+        color: #ffffff !important;
+        margin-bottom: 20px !important;
+        letter-spacing: 0px !important;
+      }
+      body.page-id-3773 #page .elementor-element.elementor-element-5b4c3ec p,
+      body.page-id-3773 #page .elementor-element.elementor-element-5b4c3ec {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        color: #e4e4e4 !important;
+        margin-bottom: 22px !important;
+      }
+
+
       /* Homepage Hero Section Label - ENABLING TRANSFORMATIVE KINETICS Color #CF3367 & Uppercase */
       .elementor-element-8ae3dc3 .kgyat-top-label {
         color: #CF3367 !important;
