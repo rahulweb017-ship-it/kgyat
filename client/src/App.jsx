@@ -228,10 +228,23 @@ export default function App() {
         margin-bottom: 10px !important;
       }
 
-      /* What We Do Page - Redesign of Services Section (We cover all aspects...) */
+      /* What We Do Page - Services Section (We cover all aspects...) */
       body.page-id-2578 .elementor-element.elementor-element-2d66078 {
-        background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%) !important;
-        padding: 80px 20px !important;
+        background: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        padding: 60px 20px !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-32f1514,
+      body.page-id-2578 .elementor-element.elementor-element-32f1514 .elementor-widget-container,
+      body.page-id-2578 .elementor-element.elementor-element-32f1514 .elementor-heading-title,
+      body.page-id-2578 .elementor-element.elementor-element-64ca5d5,
+      body.page-id-2578 .elementor-element.elementor-element-64ca5d5 .elementor-widget-container,
+      body.page-id-2578 .elementor-element.elementor-element-64ca5d5 .elementor-heading-title {
+        background: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
       }
       body.page-id-2578 .elementor-element.elementor-element-2d66078 .e-con-inner {
         display: flex !important;
