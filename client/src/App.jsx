@@ -217,6 +217,110 @@ export default function App() {
         margin: 0 auto !important;
       }
 
+      /* What We Do Page - Hero Section R & D Text Label */
+      body.page-id-2578 #page .elementor-element.elementor-element-3e55516 .elementor-heading-title,
+      body.page-id-2578 .elementor-element-3e55516 .elementor-heading-title {
+        color: #CF3367 !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        margin-bottom: 10px !important;
+      }
+
+      /* What We Do Page - Redesign of Services Section (We cover all aspects...) */
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 {
+        background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%) !important;
+        padding: 80px 20px !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 .e-con-inner {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 24px !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+      }
+      /* Full-Width Section Header */
+      body.page-id-2578 .elementor-element.elementor-element-32f1514 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        text-align: center !important;
+        margin-bottom: 25px !important;
+        align-items: center !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-32f1514 .elementor-heading-title {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        color: #272727 !important;
+        line-height: 1.35 !important;
+        max-width: 850px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+      }
+      /* 5 Modern Elevated Service Cards */
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 > .e-con-inner > .e-child:not(.elementor-element-32f1514) {
+        flex: 0 0 calc(33.333% - 16px) !important;
+        width: calc(33.333% - 16px) !important;
+        max-width: calc(33.333% - 16px) !important;
+        background: #ffffff !important;
+        border: 1px solid #eef2f6 !important;
+        border-radius: 16px !important;
+        padding: 36px 24px !important;
+        box-shadow: 0 6px 20px rgba(0, 52, 107, 0.05) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        text-align: center !important;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        box-sizing: border-box !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 > .e-con-inner > .e-child:not(.elementor-element-32f1514):hover {
+        transform: translateY(-8px) !important;
+        box-shadow: 0 16px 36px rgba(0, 52, 107, 0.12) !important;
+        border-color: #CF3367 !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 .elementor-image-box-img {
+        margin-bottom: 22px !important;
+        height: 80px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 .elementor-image-box-img img {
+        max-height: 80px !important;
+        width: auto !important;
+        object-fit: contain !important;
+        transition: transform 0.3s ease !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 > .e-con-inner > .e-child:hover .elementor-image-box-img img {
+        transform: scale(1.08) !important;
+      }
+      body.page-id-2578 .elementor-element.elementor-element-2d66078 .elementor-image-box-title {
+        font-size: 17px !important;
+        font-weight: 600 !important;
+        color: #00346B !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+      }
+      @media (max-width: 991px) and (min-width: 600px) {
+        body.page-id-2578 .elementor-element.elementor-element-2d66078 > .e-con-inner > .e-child:not(.elementor-element-32f1514) {
+          flex: 0 0 calc(50% - 12px) !important;
+          width: calc(50% - 12px) !important;
+          max-width: calc(50% - 12px) !important;
+        }
+      }
+      @media (max-width: 599px) {
+        body.page-id-2578 .elementor-element.elementor-element-2d66078 > .e-con-inner > .e-child:not(.elementor-element-32f1514) {
+          flex: 0 0 100% !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          padding: 24px 18px !important;
+        }
+      }
+
       body #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
       body #page .elementor-element.elementor-element-959cc44 h1,
       body #page .elementor-element.elementor-element-959cc44 h2,
@@ -303,6 +407,15 @@ export default function App() {
       body.page-id-3742 #page .elementor-element.elementor-element-082fb00 h1,
       body.page-id-3742 #page .elementor-element.elementor-element-082fb00 h2,
       body.page-id-3742 #page .elementor-element.elementor-element-082fb00 h3,
+      /* What We Do: Core R&D Capabilities Heading (White #ffffff) */
+      body.page-id-2578 #page .elementor-element.elementor-element-7a71ed8 .elementor-heading-title,
+      body.page-id-2578 #page .elementor-element.elementor-element-7a71ed8 h1,
+      body.page-id-2578 #page .elementor-element.elementor-element-7a71ed8 h2,
+      body.page-id-2578 #page .elementor-element.elementor-element-7a71ed8 h3,
+      body.page-id-2578 #page .elementor-element.elementor-element-285d651 .elementor-heading-title,
+      body.page-id-2578 #page .elementor-element.elementor-element-285d651 h1,
+      body.page-id-2578 #page .elementor-element.elementor-element-285d651 h2,
+      body.page-id-2578 #page .elementor-element.elementor-element-285d651 h3,
       body #page .elementor-element.elementor-element-e38546e .elementor-heading-title,
       body #page .elementor-element.elementor-element-e38546e h1,
       body #page .elementor-element.elementor-element-e38546e h2,
