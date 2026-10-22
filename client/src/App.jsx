@@ -200,6 +200,23 @@ export default function App() {
         margin-right: auto !important;
       }
 
+      /* Comparative Analysis Page Hero Section: Center Align Heading */
+      body.page-id-5472 #page .elementor-element.elementor-element-6a150cd .elementor-heading-title,
+      body.page-id-5472 #page .elementor-element.elementor-element-6a150cd .elementor-widget-container,
+      body.page-id-5472 #page .elementor-element.elementor-element-6a150cd h1,
+      body.page-id-5472 #page .elementor-element.elementor-element-6a150cd h2,
+      body.page-id-5472 #page .elementor-element.elementor-element-6a150cd h3,
+      body.page-id-5472 #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
+      body.page-id-5472 #page .elementor-element.elementor-element-959cc44 h1,
+      body.page-id-5472 #page .elementor-element.elementor-element-959cc44 h2,
+      body.page-id-5472 #page .elementor-element.elementor-element-959cc44 h3 {
+        text-align: center !important;
+      }
+      body.page-id-5472 #page .elementor-element.elementor-element-35171c7 {
+        align-items: center !important;
+        margin: 0 auto !important;
+      }
+
       body #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
       body #page .elementor-element.elementor-element-959cc44 h1,
       body #page .elementor-element.elementor-element-959cc44 h2,
