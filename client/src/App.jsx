@@ -334,6 +334,48 @@ export default function App() {
         }
       }
 
+      /* Why Fuel-Agnostic Engines Matter Now - Hero Fuel Pills (18px, 600 weight) */
+      body.page-id-5694 .elementor-element.elementor-element-4ea1990 {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 12px !important;
+        margin-top: 25px !important;
+      }
+      body.page-id-5694 .elementor-element.elementor-element-4ea1990 .elementor-widget-heading {
+        width: auto !important;
+        margin: 0 !important;
+      }
+      body.page-id-5694 .elementor-element.elementor-element-4ea1990 .elementor-widget-heading > .elementor-widget-container {
+        padding: 8px 18px !important;
+        border-radius: 50px !important;
+        background-color: rgba(0, 0, 0, 0.65) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      body.page-id-5694 .elementor-element.elementor-element-4ea1990 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-8b311f7 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-d2ea81e .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-2aed353 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-08c6042 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-36dae38 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-baa77d8 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-96199f2 .elementor-heading-title,
+      body.page-id-5694 .elementor-element.elementor-element-4ea1990 h2 {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        color: #ffffff !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+        letter-spacing: 0.5px !important;
+        text-transform: uppercase !important;
+        white-space: nowrap !important;
+      }
+
       body #page .elementor-element.elementor-element-959cc44 .elementor-heading-title,
       body #page .elementor-element.elementor-element-959cc44 h1,
       body #page .elementor-element.elementor-element-959cc44 h2,
