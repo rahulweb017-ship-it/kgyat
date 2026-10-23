@@ -682,7 +682,8 @@ export default function App() {
       }
 
       /* Keep engine subdirectory navbar brand text on a single line */
-      body.page-id-3773 .elementor-heading-title,
+      body.page-id-3773 #engine-menu .elementor-heading-title,
+      body.page-id-3773 .engine-subdirectory-header .elementor-heading-title,
       .engine-subdirectory-header .elementor-heading-title,
       #engine-menu .elementor-heading-title,
       .elementor-element-c689975 .elementor-heading-title,
@@ -696,6 +697,17 @@ export default function App() {
         white-space: nowrap !important;
         word-break: keep-all !important;
         max-width: none !important;
+      }
+
+      /* The Structural Limits of Conventional Engines - Fix headline wrapping and prevent overlapping */
+      body #page .elementor-element.elementor-element-de88c67,
+      body #page .elementor-element.elementor-element-de88c67 .elementor-widget-container,
+      body #page .elementor-element.elementor-element-de88c67 .elementor-heading-title,
+      body #page .elementor-element.elementor-element-de88c67 h2 {
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.25 !important;
       }
 
       #engine-menu .elementor-element-5319762 {
