@@ -725,6 +725,16 @@ export default function App() {
         margin-bottom: 12px !important;
         letter-spacing: -0.5px !important;
       }
+      body.page-id-3773 #page .elementor-element.elementor-element-engine-supporting-line .elementor-heading-title,
+      body.page-id-3773 #page .elementor-element.elementor-element-engine-supporting-line h2,
+      body.page-id-3773 #page .elementor-element.elementor-element-engine-supporting-line h3 {
+        font-size: 19px !important;
+        font-weight: 600 !important;
+        line-height: 1.4 !important;
+        color: #ffffff !important;
+        margin-bottom: 18px !important;
+        letter-spacing: 0.2px !important;
+      }
       body.page-id-3773 #page .elementor-element.elementor-element-ecd1c65 .elementor-heading-title,
       body.page-id-3773 #page .elementor-element.elementor-element-ecd1c65 h2,
       body.page-id-3773 #page .elementor-element.elementor-element-ecd1c65 h3 {
@@ -732,7 +742,7 @@ export default function App() {
         font-weight: 600 !important;
         line-height: 1.35 !important;
         color: #ffffff !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 8px !important;
         letter-spacing: 0px !important;
       }
       body.page-id-3773 #page .elementor-element.elementor-element-5b4c3ec p,
