@@ -768,6 +768,62 @@ export default function App() {
         margin-bottom: 22px !important;
       }
 
+      /* Engine Subdirectory - Why KGYAT Engines Section */
+      .elementor-element-why-kgyat-engines {
+        background-color: #ffffff !important;
+        padding: 70px 0 60px 0 !important;
+      }
+      .elementor-element-why-kgyat-engines .e-con-inner {
+        max-width: 1000px !important;
+        margin: 0 auto !important;
+        padding: 0 24px !important;
+      }
+      .elementor-element-why-kgyat-engines .kgyat-top-label {
+        color: #CF3367 !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        margin-bottom: 12px !important;
+        display: block !important;
+      }
+      .elementor-element-why-kgyat-engines .elementor-heading-title,
+      .elementor-element-why-kgyat-engines h2 {
+        color: #272727 !important;
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        line-height: 1.25 !important;
+        margin-top: 0 !important;
+        margin-bottom: 22px !important;
+        white-space: normal !important;
+        word-break: normal !important;
+      }
+      .elementor-element-why-kgyat-engines p {
+        font-size: 16.5px !important;
+        line-height: 1.75 !important;
+        color: #374151 !important;
+        margin-bottom: 18px !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+      }
+      .elementor-element-why-kgyat-engines p:last-child {
+        margin-bottom: 0 !important;
+      }
+      @media (max-width: 768px) {
+        .elementor-element-why-kgyat-engines {
+          padding: 45px 0 40px 0 !important;
+        }
+        .elementor-element-why-kgyat-engines .elementor-heading-title,
+        .elementor-element-why-kgyat-engines h2 {
+          font-size: 28px !important;
+          margin-bottom: 16px !important;
+        }
+        .elementor-element-why-kgyat-engines p {
+          font-size: 15.5px !important;
+          line-height: 1.65 !important;
+        }
+      }
+
 
       /* Homepage Hero Section Label - ENABLING TRANSFORMATIVE KINETICS Color #CF3367 & Uppercase */
       .elementor-element-8ae3dc3 .kgyat-top-label {
