@@ -681,7 +681,7 @@ export default function App() {
         text-transform: none !important;
       }
 
-      /* Keep engine subdirectory navbar brand text on a single line */
+      /* Keep engine subdirectory navbar brand text on a single line and normal font style (not italic) */
       body.page-id-3773 #engine-menu .elementor-heading-title,
       body.page-id-3773 .engine-subdirectory-header .elementor-heading-title,
       .engine-subdirectory-header .elementor-heading-title,
@@ -689,14 +689,17 @@ export default function App() {
       .elementor-element-c689975 .elementor-heading-title,
       #engine-menu .elementor-element-4f3358f,
       #engine-menu .elementor-element-4f3358f p,
+      #engine-menu .elementor-element-4f3358f *,
       #engine-menu .elementor-element-4f3358f .elementor-widget-container,
       .elementor-element-4f3358f,
       .elementor-element-4f3358f p,
+      .elementor-element-4f3358f *,
       .elementor-element-4f3358f .elementor-widget-container,
       .elementor-element-4f3358f .elementor-heading-title {
         white-space: nowrap !important;
         word-break: keep-all !important;
         max-width: none !important;
+        font-style: normal !important;
       }
 
       /* The Structural Limits of Conventional Engines - Fix headline wrapping and prevent overlapping */
