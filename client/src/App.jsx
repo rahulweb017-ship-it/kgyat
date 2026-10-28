@@ -65,23 +65,35 @@ function bindForms(container, pageTitle) {
       const fd = new FormData(form);
       const fields = {};
       for (const [k, v] of fd.entries()) if (typeof v === 'string') fields[k] = v;
-      let statusEl = form.querySelector('.wpcf7-response-output') || form.querySelector('.kgyat-form-status');
+      let statusEl = form.querySelector('.kgyat-form-status-container') || form.querySelector('.wpcf7-response-output') || form.querySelector('.kgyat-form-status');
       if (!statusEl) {
         statusEl = document.createElement('div');
         statusEl.className = 'kgyat-form-status';
         statusEl.style.marginTop = '12px';
         form.appendChild(statusEl);
       }
-      statusEl.textContent = 'Sending…';
+      statusEl.style.display = 'block';
+      statusEl.textContent = 'Submitting inquiry…';
       statusEl.style.color = '#555';
+      const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
       try {
         const res = await submitContactForm({ page: pageTitle, fields });
-        statusEl.textContent = res.message || 'Thank you. Your message has been sent.';
+        statusEl.textContent = res.message || 'Thank you! Your feasibility inquiry has been received. Our engineering leadership will review and reply within 1 business day.';
         statusEl.style.color = '#1a7f37';
+        statusEl.style.background = '#e6f4ea';
+        statusEl.style.padding = '12px 16px';
+        statusEl.style.borderRadius = '8px';
+        statusEl.style.fontWeight = '600';
         form.reset();
       } catch (err) {
         statusEl.textContent = err.message || 'Sorry, something went wrong. Please try again.';
         statusEl.style.color = '#b32d2e';
+        statusEl.style.background = '#fce8e6';
+        statusEl.style.padding = '12px 16px';
+        statusEl.style.borderRadius = '8px';
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
       }
     });
   });
@@ -151,6 +163,20 @@ export default function App() {
         }
       };
       container.addEventListener('click', handleTooltipToggle);
+      // FAQ Accordion Handler for CTA Landing page
+      const handleFaqToggle = (e) => {
+        const questionBtn = e.target.closest('.kgyat-faq-question');
+        if (!questionBtn) return;
+        const faqItem = questionBtn.closest('.kgyat-faq-item');
+        if (!faqItem) return;
+        const isOpen = faqItem.classList.contains('active');
+        faqItem.classList.toggle('active', !isOpen);
+        questionBtn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+        const icon = questionBtn.querySelector('.kgyat-faq-icon');
+        if (icon) icon.textContent = !isOpen ? '−' : '+';
+      };
+      container.addEventListener('click', handleFaqToggle);
+
       // Elementor sometimes needs a second nudge once images/lazy elements settle.
       setTimeout(() => { if (!cancelled) { reinitWidgets(); revealLazyContent(container); } }, 300);
 
