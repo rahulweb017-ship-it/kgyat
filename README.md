@@ -25,7 +25,7 @@ kgyat-react/
 
   client/                # React frontend (Vite + React 18 + React Router)
     dist/                # built output (created by `npm run build`) ← deploy this
-    public/wp-mirror/    # static assets (css/js/fonts/images) ← deploy this
+    public/media/    # static assets (css/js/fonts/images) ← deploy this
     src/
       manifest.json      # per-page content (title, meta, CSS, HTML)
       App.jsx            # SPA router + page renderer + contact form portal
@@ -50,7 +50,7 @@ Upload the entire `kgyat-react/` folder to your server. You can exclude:
 **Required for production:**
 - `server/`
 - `client/dist/`
-- `client/public/wp-mirror/`
+- `client/public/media/`
 - `package.json`
 - `package-lock.json` (if present)
 

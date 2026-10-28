@@ -874,7 +874,7 @@ export const kgyatGlobalCustomStyles = `
         min-height: 0 !important;
         max-height: 384px !important;
         --min-height: 0px !important;
-        background-image: url("/wp-mirror/wp-content/uploads/2025/05/IMG_0140-1.webp") !important;
+        background-image: url("/media/wp-content/uploads/2025/05/IMG_0140-1.webp") !important;
         background-size: cover !important;
         background-position: center bottom !important;
         background-repeat: no-repeat !important;

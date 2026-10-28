@@ -15,10 +15,12 @@ app.use(cors());
 app.use(express.json({ limit: '2mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// Static site assets (css/js/fonts/images/video) captured from the original site.
-// Served from the client's public folder so we don't duplicate ~260MB into dist.
-const MIRROR_DIR = path.join(ROOT, 'client', 'public', 'wp-mirror');
-app.use('/wp-mirror', express.static(MIRROR_DIR, { maxAge: '30d', fallthrough: true }));
+// Static media assets (css/js/fonts/images/video).
+// Served from the client's public/media folder.
+const MEDIA_DIR = path.join(ROOT, 'client', 'public', 'media');
+app.use('/media', express.static(MEDIA_DIR, { maxAge: '30d', fallthrough: true }));
+// Legacy redirect from /wp-mirror to /media for backward compatibility
+app.use('/wp-mirror', (req, res) => res.redirect(301, '/media' + req.url));
 
 // Contact / lead form endpoint.
 app.post('/api/contact', handleContact);
@@ -35,7 +37,7 @@ if (fs.existsSync(DIST)) {
   });
   app.use(express.static(DIST, { maxAge: 0, etag: false }));
   app.get('*', (req, res, next) => {
-    if (req.path.startsWith('/api') || req.path.startsWith('/wp-mirror')) return next();
+    if (req.path.startsWith('/api') || req.path.startsWith('/media') || req.path.startsWith('/wp-mirror')) return next();
     const cleanPath = req.path.replace(/^\/+|\/+$/g, '');
     const routeIndex = path.join(DIST, cleanPath, 'index.html');
     if (cleanPath && fs.existsSync(routeIndex)) {
