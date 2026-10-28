@@ -36,6 +36,11 @@ if (fs.existsSync(DIST)) {
   app.use(express.static(DIST, { maxAge: 0, etag: false }));
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api') || req.path.startsWith('/wp-mirror')) return next();
+    const cleanPath = req.path.replace(/^\/+|\/+$/g, '');
+    const routeIndex = path.join(DIST, cleanPath, 'index.html');
+    if (cleanPath && fs.existsSync(routeIndex)) {
+      return res.sendFile(routeIndex, { etag: false });
+    }
     res.sendFile(path.join(DIST, 'index.html'), { etag: false });
   });
 } else {
