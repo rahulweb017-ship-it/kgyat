@@ -35,9 +35,6 @@ kgyat-react/
     package.json
     vite.config.js
 
-  capture/               # one-time capture pipeline (not needed in production)
-    crawl.mjs
-    pages.tsv
 ```
 
 ---
@@ -47,7 +44,6 @@ kgyat-react/
 ### 1. Upload the folder
 
 Upload the entire `kgyat-react/` folder to your server. You can exclude:
-- `capture/` (only needed to re-capture content)
 - `client/node_modules/` (reinstalled on server)
 - `client/src/` (already built into `client/dist/`)
 
